@@ -24,13 +24,15 @@ class ViewModel: ObservableObject {
             let request = UNNotificationRequest(identifier: "reminderNotification\(i)", content: content, trigger: trigger)
             
             UNUserNotificationCenter.current().add(request) { error in
-                if let error = error {
-                    self.alertText = "Error scheduling notification: \(error.localizedDescription)"
-                    print("Error scheduling notification: \(error.localizedDescription)")
-                } else {
-                    self.alertText = "Notification scheduled successfully"
-                    self.showAlert = true
-                    print("Notification scheduled successfully")
+                DispatchQueue.main.async {
+                    if let error = error {
+                        self.alertText = "Error scheduling notification: \(error.localizedDescription)"
+                        print("Error scheduling notification: \(error.localizedDescription)")
+                    } else {
+                        self.alertText = "Notification scheduled successfully"
+                        self.showAlert = true
+                        print("Notification scheduled successfully")
+                    }
                 }
             }
         }
