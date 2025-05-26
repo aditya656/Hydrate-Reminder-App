@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		68B768052D364EFC00D5C217 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B768042D364EFC00D5C217 /* Preview Assets.xcassets */; };
 		68B7680C2D364F4100D5C217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B7680B2D364F4100D5C217 /* AppDelegate.swift */; };
 		68B7680E2D36511A00D5C217 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B7680D2D36511A00D5C217 /* NotificationHandler.swift */; };
+		77E53D3E2DDF4C9E00F612E1 /* LinkMetadataItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E53D3D2DDF4C9800F612E1 /* LinkMetadataItemSource.swift */; };
+		77E53D442DDF4F4E00F612E1 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77E53D432DDF4F4E00F612E1 /* AppIcon.png */; };
+		77E53D462DE450DE00F612E1 /* WaterNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E53D452DE450D900F612E1 /* WaterNotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,14 @@
 		68B768042D364EFC00D5C217 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68B7680B2D364F4100D5C217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68B7680D2D36511A00D5C217 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		77E53D3D2DDF4C9800F612E1 /* LinkMetadataItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkMetadataItemSource.swift; sourceTree = "<group>"; };
+		77E53D432DDF4F4E00F612E1 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		77E53D452DE450D900F612E1 /* WaterNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterNotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		77E53D3F2DDF4CC800F612E1 /* ShareSheetWrapper */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ShareSheetWrapper; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		68B767F72D364EF800D5C217 /* Frameworks */ = {
@@ -55,8 +65,12 @@
 		68B767FC2D364EF800D5C217 /* LocalNotification */ = {
 			isa = PBXGroup;
 			children = (
+				77E53D432DDF4F4E00F612E1 /* AppIcon.png */,
+				77E53D3F2DDF4CC800F612E1 /* ShareSheetWrapper */,
+				77E53D3C2DDF4C7C00F612E1 /* LinkMetadataItemSource */,
 				68B767FD2D364EF800D5C217 /* LocalNotificationApp.swift */,
 				68B767FF2D364EF800D5C217 /* ContentView.swift */,
+				77E53D452DE450D900F612E1 /* WaterNotificationView.swift */,
 				68B7680D2D36511A00D5C217 /* NotificationHandler.swift */,
 				68B768012D364EFC00D5C217 /* Assets.xcassets */,
 				68B768032D364EFC00D5C217 /* Preview Content */,
@@ -73,6 +87,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		77E53D3C2DDF4C7C00F612E1 /* LinkMetadataItemSource */ = {
+			isa = PBXGroup;
+			children = (
+				77E53D3D2DDF4C9800F612E1 /* LinkMetadataItemSource.swift */,
+			);
+			path = LinkMetadataItemSource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +109,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				77E53D3F2DDF4CC800F612E1 /* ShareSheetWrapper */,
 			);
 			name = LocalNotification;
 			productName = LocalNotification;
@@ -133,6 +158,7 @@
 			files = (
 				68B768052D364EFC00D5C217 /* Preview Assets.xcassets in Resources */,
 				68B768022D364EFC00D5C217 /* Assets.xcassets in Resources */,
+				77E53D442DDF4F4E00F612E1 /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B7680C2D364F4100D5C217 /* AppDelegate.swift in Sources */,
+				77E53D462DE450DE00F612E1 /* WaterNotificationView.swift in Sources */,
+				77E53D3E2DDF4C9E00F612E1 /* LinkMetadataItemSource.swift in Sources */,
 				68B7680E2D36511A00D5C217 /* NotificationHandler.swift in Sources */,
 				68B768002D364EF800D5C217 /* ContentView.swift in Sources */,
 				68B767FE2D364EF800D5C217 /* LocalNotificationApp.swift in Sources */,
@@ -277,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalNotification/Preview Content\"";
@@ -295,6 +324,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aditya.LocalNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalNotification/Preview Content\"";
@@ -324,6 +355,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aditya.LocalNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

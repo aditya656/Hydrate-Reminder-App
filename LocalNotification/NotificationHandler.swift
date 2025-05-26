@@ -8,7 +8,7 @@
 import UIKit
 
 @MainActor
-class ViewModel: ObservableObject {
+class WaterNotificationViewModel: ObservableObject {
     @Published var sliderValue: Int = 20
     @Published var count: Int = 10
     @Published var showAlert: Bool = false
