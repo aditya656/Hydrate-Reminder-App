@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var isMenuOpen = false
     @State private var selectedView: MenuOption = .waterNotification
-
+    @StateObject var viewModel = WaterNotificationViewModel()
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -18,13 +19,17 @@ struct ContentView: View {
                 Group {
                     switch selectedView {
                     case .waterNotification:
-                        WaterNotificationView()
+                        WaterNotificationView(viewModel: viewModel)
                     case .home:
                         HomeView()
                     case .profile:
                         ProfileView()
                     case .settings:
                         SettingsView()
+                    case .viewModifiersOne:
+                        ViewModifiersOne()
+                    case .scrollableCollectionView:
+                        ScrollableCollectionViewWrapper()
                     }
                 }
                 .navigationTitle(selectedView.title)
@@ -52,7 +57,7 @@ struct ContentView: View {
 }
 
 enum MenuOption: String, CaseIterable {
-    case waterNotification, home, profile, settings
+    case waterNotification, home, profile, settings, viewModifiersOne, scrollableCollectionView
 
     var title: String {
         switch self {
@@ -60,6 +65,8 @@ enum MenuOption: String, CaseIterable {
         case .home: return "Home"
         case .profile: return "Profile"
         case .settings: return "Settings"
+        case .viewModifiersOne: return "View Modifiers 1"
+        case .scrollableCollectionView: return "Scrollable Collection View"
         }
     }
 }

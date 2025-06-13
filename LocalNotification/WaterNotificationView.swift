@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WaterNotificationView: View {
-    @StateObject var viewModel = WaterNotificationViewModel()
+    @ObservedObject var viewModel = WaterNotificationViewModel()
     @State private var showShareSheet = false
     
     var body: some View {
