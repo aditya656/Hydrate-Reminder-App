@@ -1,6 +1,6 @@
 //
 //  ScrollableCollectionView.swift
-//  LocalNotification
+//  Utilix
 //
 //  Created by Aditya Patole on 09/06/25.
 //

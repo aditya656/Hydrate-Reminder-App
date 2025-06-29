@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  LocalNotification
+//  Utilix
 //
 //  Created by Aditya Patole on 14/01/25.
 //
@@ -30,6 +30,9 @@ struct ContentView: View {
                         ViewModifiersOne()
                     case .scrollableCollectionView:
                         ScrollableCollectionViewWrapper()
+                    case .webView:
+                        WebView(url: URL(string: "https://www.google.com")!)
+                                .edgesIgnoringSafeArea(.all)
                     }
                 }
                 .navigationTitle(selectedView.title)
@@ -57,7 +60,7 @@ struct ContentView: View {
 }
 
 enum MenuOption: String, CaseIterable {
-    case waterNotification, home, profile, settings, viewModifiersOne, scrollableCollectionView
+    case waterNotification, home, profile, settings, viewModifiersOne, scrollableCollectionView, webView
 
     var title: String {
         switch self {
@@ -67,6 +70,7 @@ enum MenuOption: String, CaseIterable {
         case .settings: return "Settings"
         case .viewModifiersOne: return "View Modifiers 1"
         case .scrollableCollectionView: return "Scrollable Collection View"
+        case .webView: return "Web View"
         }
     }
 }

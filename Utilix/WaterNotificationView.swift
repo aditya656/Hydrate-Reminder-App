@@ -1,6 +1,6 @@
 //
 //  WaterNotificationView.swift
-//  LocalNotification
+//  Utilix
 //
 //  Created by Aditya Patole on 26/05/25.
 //

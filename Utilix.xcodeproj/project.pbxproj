@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68B767FE2D364EF800D5C217 /* LocalNotificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B767FD2D364EF800D5C217 /* LocalNotificationApp.swift */; };
+		68B767FE2D364EF800D5C217 /* Utilix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B767FD2D364EF800D5C217 /* Utilix.swift */; };
 		68B768002D364EF800D5C217 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B767FF2D364EF800D5C217 /* ContentView.swift */; };
 		68B768022D364EFC00D5C217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B768012D364EFC00D5C217 /* Assets.xcassets */; };
 		68B768052D364EFC00D5C217 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B768042D364EFC00D5C217 /* Preview Assets.xcassets */; };
 		68B7680C2D364F4100D5C217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B7680B2D364F4100D5C217 /* AppDelegate.swift */; };
 		68B7680E2D36511A00D5C217 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B7680D2D36511A00D5C217 /* NotificationHandler.swift */; };
+		77903FFE2E01587000129ACF /* WebViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77903FFD2E01586700129ACF /* WebViewWrapper.swift */; };
 		77E53D3E2DDF4C9E00F612E1 /* LinkMetadataItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E53D3D2DDF4C9800F612E1 /* LinkMetadataItemSource.swift */; };
-		77E53D442DDF4F4E00F612E1 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77E53D432DDF4F4E00F612E1 /* AppIcon.png */; };
 		77E53D462DE450DE00F612E1 /* WaterNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E53D452DE450D900F612E1 /* WaterNotificationView.swift */; };
 		77E53D482DE8523700F612E1 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E53D472DE8518100F612E1 /* CustomMenuView.swift */; };
 		77E53D4A2DE98BBD00F612E1 /* ViewModifiers1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E53D492DE98BB000F612E1 /* ViewModifiers1.swift */; };
@@ -23,15 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		68B767FA2D364EF800D5C217 /* LocalNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		68B767FD2D364EF800D5C217 /* LocalNotificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationApp.swift; sourceTree = "<group>"; };
+		68B767FA2D364EF800D5C217 /* Utilix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B767FD2D364EF800D5C217 /* Utilix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilix.swift; sourceTree = "<group>"; };
 		68B767FF2D364EF800D5C217 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68B768012D364EFC00D5C217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68B768042D364EFC00D5C217 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68B7680B2D364F4100D5C217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68B7680D2D36511A00D5C217 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		77903FFD2E01586700129ACF /* WebViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWrapper.swift; sourceTree = "<group>"; };
 		77E53D3D2DDF4C9800F612E1 /* LinkMetadataItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkMetadataItemSource.swift; sourceTree = "<group>"; };
-		77E53D432DDF4F4E00F612E1 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		77E53D452DE450D900F612E1 /* WaterNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterNotificationView.swift; sourceTree = "<group>"; };
 		77E53D472DE8518100F612E1 /* CustomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
 		77E53D492DE98BB000F612E1 /* ViewModifiers1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers1.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		68B767F12D364EF800D5C217 = {
 			isa = PBXGroup;
 			children = (
-				68B767FC2D364EF800D5C217 /* LocalNotification */,
+				68B767FC2D364EF800D5C217 /* Utilix */,
 				68B767FB2D364EF800D5C217 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,18 +65,18 @@
 		68B767FB2D364EF800D5C217 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68B767FA2D364EF800D5C217 /* LocalNotification.app */,
+				68B767FA2D364EF800D5C217 /* Utilix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68B767FC2D364EF800D5C217 /* LocalNotification */ = {
+		68B767FC2D364EF800D5C217 /* Utilix */ = {
 			isa = PBXGroup;
 			children = (
-				77E53D432DDF4F4E00F612E1 /* AppIcon.png */,
 				77E53D3F2DDF4CC800F612E1 /* ShareSheetWrapper */,
 				77E53D3C2DDF4C7C00F612E1 /* LinkMetadataItemSource */,
-				68B767FD2D364EF800D5C217 /* LocalNotificationApp.swift */,
+				68B767FD2D364EF800D5C217 /* Utilix.swift */,
+				77903FFD2E01586700129ACF /* WebViewWrapper.swift */,
 				68B767FF2D364EF800D5C217 /* ContentView.swift */,
 				77E53D472DE8518100F612E1 /* CustomMenuView.swift */,
 				77E53D492DE98BB000F612E1 /* ViewModifiers1.swift */,
@@ -88,7 +88,7 @@
 				68B768032D364EFC00D5C217 /* Preview Content */,
 				68B7680B2D364F4100D5C217 /* AppDelegate.swift */,
 			);
-			path = LocalNotification;
+			path = Utilix;
 			sourceTree = "<group>";
 		};
 		68B768032D364EFC00D5C217 /* Preview Content */ = {
@@ -110,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		68B767F92D364EF800D5C217 /* LocalNotification */ = {
+		68B767F92D364EF800D5C217 /* Utilix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68B768082D364EFC00D5C217 /* Build configuration list for PBXNativeTarget "LocalNotification" */;
+			buildConfigurationList = 68B768082D364EFC00D5C217 /* Build configuration list for PBXNativeTarget "Utilix" */;
 			buildPhases = (
 				68B767F62D364EF800D5C217 /* Sources */,
 				68B767F72D364EF800D5C217 /* Frameworks */,
@@ -125,9 +125,9 @@
 			fileSystemSynchronizedGroups = (
 				77E53D3F2DDF4CC800F612E1 /* ShareSheetWrapper */,
 			);
-			name = LocalNotification;
+			name = Utilix;
 			productName = LocalNotification;
-			productReference = 68B767FA2D364EF800D5C217 /* LocalNotification.app */;
+			productReference = 68B767FA2D364EF800D5C217 /* Utilix.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 68B767F52D364EF800D5C217 /* Build configuration list for PBXProject "LocalNotification" */;
+			buildConfigurationList = 68B767F52D364EF800D5C217 /* Build configuration list for PBXProject "Utilix" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,7 +158,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				68B767F92D364EF800D5C217 /* LocalNotification */,
+				68B767F92D364EF800D5C217 /* Utilix */,
 			);
 		};
 /* End PBXProject section */
@@ -170,7 +170,6 @@
 			files = (
 				68B768052D364EFC00D5C217 /* Preview Assets.xcassets in Resources */,
 				68B768022D364EFC00D5C217 /* Assets.xcassets in Resources */,
-				77E53D442DDF4F4E00F612E1 /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,12 +184,13 @@
 				77E53D462DE450DE00F612E1 /* WaterNotificationView.swift in Sources */,
 				77E53D4A2DE98BBD00F612E1 /* ViewModifiers1.swift in Sources */,
 				77F83D412DF6993A00202EFE /* ScrollableCollectionView.swift in Sources */,
+				77903FFE2E01587000129ACF /* WebViewWrapper.swift in Sources */,
 				77E53D482DE8523700F612E1 /* CustomMenuView.swift in Sources */,
 				77E53D3E2DDF4C9E00F612E1 /* LinkMetadataItemSource.swift in Sources */,
 				68B7680E2D36511A00D5C217 /* NotificationHandler.swift in Sources */,
 				77F83D3E2DF6991000202EFE /* ScrollableCollectionViewWrapper.swift in Sources */,
 				68B768002D364EF800D5C217 /* ContentView.swift in Sources */,
-				68B767FE2D364EF800D5C217 /* LocalNotificationApp.swift in Sources */,
+				68B767FE2D364EF800D5C217 /* Utilix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +324,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LocalNotification/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Utilix/Preview Content\"";
 				DEVELOPMENT_TEAM = JC8MFK8JY2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -356,7 +356,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LocalNotification/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Utilix/Preview Content\"";
 				DEVELOPMENT_TEAM = JC8MFK8JY2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -383,7 +383,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68B767F52D364EF800D5C217 /* Build configuration list for PBXProject "LocalNotification" */ = {
+		68B767F52D364EF800D5C217 /* Build configuration list for PBXProject "Utilix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68B768062D364EFC00D5C217 /* Debug */,
@@ -392,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68B768082D364EFC00D5C217 /* Build configuration list for PBXNativeTarget "LocalNotification" */ = {
+		68B768082D364EFC00D5C217 /* Build configuration list for PBXNativeTarget "Utilix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68B768092D364EFC00D5C217 /* Debug */,
